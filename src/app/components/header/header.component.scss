@@ -1,0 +1,20 @@
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
+  border-radius: 0 0 8px 8px;
+  border: 1px solid grey;
+  border-top:0;
+  background-color: inherit;
+}
+
+span{
+  font-size: 16px;
+  color: #e8eaed;
+  padding: 0 8px;
+}

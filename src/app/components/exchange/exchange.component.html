@@ -1,0 +1,36 @@
+<div class="exchanger">
+  <p>{{firstValue}} {{firstCurrency.txt}} дорівнює</p>
+  <h1>{{secondValue}} {{secondCurrency.txt}}</h1>
+<div class="form">
+<input
+  type="number"
+  [(ngModel)]="firstValue"
+  (ngModelChange)="computingSecondValue()"
+>
+<select
+  [(ngModel)]="firstCurrency"
+  (ngModelChange)="computingSecondValue()"
+>
+  <option
+    *ngFor="let c of currencies"
+    [ngValue]="c"
+  >{{c.cc}} {{c.txt}}</option>
+</select>
+</div>
+
+<div class="form">
+<input type="number"
+       [(ngModel)]="secondValue"
+       (ngModelChange)="computingFirstValue()"
+>
+<select
+  [(ngModel)]="secondCurrency"
+  (ngModelChange)="computingSecondValue()"
+>
+  <option
+    *ngFor="let c of currencies"
+    [ngValue]="c"
+  >{{c.cc}} {{c.txt}}</option>
+</select>
+</div>
+</div>

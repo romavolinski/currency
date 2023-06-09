@@ -1,0 +1,71 @@
+$gray: #757575;
+$somegray:#BDC1C6;
+$moregray: #202124;
+p {
+  color: #9aa0a6;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 32px;
+  color: #e8eaed;
+}
+
+input {
+  all: unset;
+  border-right: 1px solid $gray;
+  height: 30px;
+  width: 250px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #BDC1C6;
+}
+
+select {
+  background-color: $moregray;
+  color: $somegray;
+  border: none;
+  border-left: 1px solid grey;
+  border-radius: 0;
+  outline: none;
+  height: 30px;
+  width: 65px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  word-spacing: 15px;
+  position: absolute;
+  right: 10px;
+
+}
+
+.exchanger {
+  width: 282px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid $gray;
+  padding: 16px;
+  margin: 8px auto;
+  background-color: $moregray;
+  overflow: hidden;
+}
+
+.form {
+  border: 1px solid $gray;
+  border-radius: 8px;
+  height: 40px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 16px 0 0 0;
+  &:hover {
+    border-color: $somegray;
+  }
+}
+
+
+
